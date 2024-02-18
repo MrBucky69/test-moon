@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+<title>Login</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 300px; /* Decreased width */
+        margin: 40px auto 30px; /* Adjusted margin */
+        position: relative;
+    }
+    .logo {
+        text-align: center;
+        margin-bottom: 15px; /* Adjusted margin */
+        margin-top: 20px; /* Adjusted margin */
+    }
+    .logo img {
+        width: 250px; /* Decreased logo size */
+        height: auto;
+    }
+    .container input {
+        width: calc(100% - 30px); /* Decreased width */
+        padding: 15px; /* Decreased padding */
+        margin-top: 7px; /* Decreased margin */
+        margin-bottom: 15px; /* Decreased margin */
+        border: 2px solid transparent; /* Border set to transparent */
+        border-radius: 10px; /* Decreased border radius */
+        background-color: #1A1A1A;
+        color: white;
+        font-weight: 600;
+        box-shadow: inset 0 0 8px rgba(0,0,0,0.5); /* Decreased shadow */
+        transition: border-color 0.3s ease;
+        outline: none; /* Remove default outline */
+    }
+    .container input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px #1A1A1A inset !important;
+        -webkit-text-fill-color: white !important;
+    }
+    .container input:focus,
+    .container input:-webkit-autofill:focus {
+        border-color: #0AD2F2; /* Border color change on focus */
+        outline: none; /* Remove default outline */
+    }
+    .signup {
+        text-align: center;
+        margin-bottom: 15px; /* Decreased margin */
+    }
+    .signup a {
+        color: #0AD2F2; /* Color for Sign Up */
+        text-decoration: underline; /* Underline */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+    .login-btn {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        background-image: linear-gradient(to right, #0AD2F2, #00A3FF); /* Gradient background */
+        color: white;
+        margin-top: 15px; /* Decreased margin-top */
+    }
+    .login-btn:hover {
+        background-image: linear-gradient(to right, #00A3FF, #0A73D2); /* Darken gradient color on hover */
+    }
+    .error-message {
+        position: fixed;
+        top: 15px; /* Decreased top */
+        right: 15px; /* Decreased right */
+        background-color: #FF6347; /* Tomato color */
+        color: white;
+        padding: 8px 15px; /* Decreased padding */
+        border-radius: 8px; /* Decreased border radius */
+        box-shadow: 0 0 8px rgba(0,0,0,0.5); /* Decreased shadow */
+        animation: slideIn 0.5s ease forwards, fadeOut 0.5s ease 4.5s forwards;
+        display: none;
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    @keyframes fadeOut {
+      timeoutfrom {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="logo">
+    <img src="https://i.postimg.cc/LX3cR4FG/logo-1.png" alt="Logo">
+</div>
+<div class="container">
+    <form id="login-form">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <input type="password" id="password" name="password" placeholder="Password" required>
+
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+</div>
+<div class="signup">
+    <p>Need an Account? <a id="signup-link" style="color: #0AD2F2; text-decoration: underline;">Sign Up</a></p>
+</div>
+
+<div class="error-message" id="error-message"></div>
+
+  <script>
+  document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Check if email and password match the correct credentials
+      if (email === 'skibbity@gmail.com' && password === 'Nigersaurus') {
+          // Redirect to mode.html upon successful login
+          window.location.href = 'mode.html';
+      } else {
+          // Display error message
+          const errorMessage = document.getElementById('error-message');
+          errorMessage.textContent = 'Incorrect password';
+          errorMessage.style.display = 'block';
+
+          // Hide error message after 5 seconds
+          setTimeout(function() {
+              errorMessage.style.display = 'none';
+          }, 5000);
+      }
+  });
+
+  // Add event listener to the "Sign Up" link
+  document.getElementById('signup-link').addEventListener('click', function() {
+      // Navigate to Signup.html
+      window.location.href = 'Signup.html';
+  });
+
+  // Redirect to history.html after 20 seconds
+  setTimeout(function() {
+      window.location.href = "history.html";
+  }, 20000); // 20 seconds in milliseconds
+  </script>
+
+
+</body>
+</html>

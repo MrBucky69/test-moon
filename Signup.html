@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="logo.png">
+<title>Under Development</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Blurry box */
+    .blurry-box {
+        width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        box-shadow: 0 0 20px 10px #0A73D2; /* Blurry glow with color #0A73D2 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: wave 2s linear infinite; /* Apply wavy animation */
+    }
+
+    /* Text styling */
+    .blurry-box p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #0A73D2; /* Text color same as glow color */
+    }
+
+    /* Wavy animation */
+    @keyframes wave {
+        0% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+        50% { transform: translateX(-50%) translateY(-50%) rotate(5deg); }
+        100% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+    }
+</style>
+</head>
+<body>
+<div class="blurry-box">
+    <p>Under Development</p>
+</div>
+
+<script>
+    setTimeout(function() {
+      window.location.href = "history.html";
+    }, 20000); // 20 sec in milliseconds
+</script>
+
+</body>
+</html>
