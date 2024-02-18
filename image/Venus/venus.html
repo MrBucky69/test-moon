@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="logo.png">
+    <title>French History</title>
+  <style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .arcade-text {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        color: #0AD2F2;
+        margin-right: 10px;
+    }
+    .logo {
+        max-width: 100px; /* Adjust the width as needed */
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .game {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #222;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: outline-color 0.6s ease;
+        overflow: hidden;
+    }
+    .game:hover {
+        outline: 3px solid #0AD2F2;
+    }
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #0AD2F2;
+        color: #000;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .play-button:before {
+        content: "\25B6"; /* Play icon */
+    }
+    /* Style anchor tag to remove default text decoration */
+    .game-link {
+        text-decoration: none;
+        color: inherit;
+    }
+  </style>
+  </head>
+  <body>
+  <div class="header">
+    <h1 class="arcade-text">MoonHub Arcade</h1>
+    <img src="https://i.postimg.cc/NM5bsj0Q/moonhub.png" alt="MoonHub Logo" class="logo">
+  </div>
+  <div class="container">
+        <a href="Games/2048/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/2048.png');"><button class="play-button"></button></div></a>
+        <a href="Games/a-dance-of-fire-and-ice/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/a-dance-of-fire-and-ice.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/agario-minigame/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/agar.io.png');"><button class="play-button"></button></div></a>
+        <a href="Games/basketball-stars/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/basketball-stars.png');"><button class="play-button"></button></div></a>
+        <a href="Games/breaklock" class="game-link"><div class="game" style="background-image: url('Game-Image/breaklock.png');"><button class="play-button"></button></div></a>
+        <a href="Games/chroma" class="game-link"><div class="game" style="background-image: url('Game-Image/chroma.png');"><button class="play-button"></button></div></a>
+        <a href="Games/cookie/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/cookieclicker.png');"><button class="play-button"></button></div></a>
+        <a href="Games/cubefield/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/cubefield.png');"><button class="play-button"></button></div></a>
+        <a href="Games/dinosaur/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/dyno.png');"><button class="play-button"></button></div></a>
+        <a href="Games/donut-boy/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/donut-boy.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/doodle-jump/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/doodle-jump.png');"><button class="play-button"></button></div></a>
+        <a href="Games/drift/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/drift.png');"><button class="play-button"></button></div></a>
+        <a href="Games/ducklife/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/ducklife.png');"><button class="play-button"></button></div></a>
+        <a href="Games/ducklife2/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/ducklife-2.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/ducklife3/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/ducklife3.jpeg');"><button class="play-button"></button></div></a>
+        <a href="Games/ducklife4/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/ducklife4.png');"><button class="play-button"></button></div></a>
+        <a href="Games/fireboy-and-watergirl-forest-temple/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/fire-boy.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/flappy-2048/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/flappy2048.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/flappybird/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/flappybird.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/friday-night-funkin--vs-ex/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/funkin-ex.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/friday-night-funkin--week-6" class="game-link"><div class="game" style="background-image: url('Game-Image/funkin-6.jpg"><button class="play-button"></button></div></a>
+        <a href="Games/friendlyfire/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/fire.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/geometry/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/dash.png');"><button class="play-button"></button></div></a>
+        <a href="Games/vex3/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/vex3.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/vex4/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/vex4.png');"><button class="play-button"></button></div></a>
+        <a href="Games/vex5/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/vex5.jpg');"><button class="play-button"></button></div></a>
+        <a href="Games/superhot/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/superhot.jpg"><button class="play-button"></button></div></a>
+        <a href="Games/run-3/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/run3.png');"><button class="play-button"></button></div></a>
+        <a href="Games/sm64/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/sm64.webp');"><button class="play-button"></button></div></a>
+        <a href="Games/slope-2/index.html" class="game-link"><div class="game" style="background-image: url('Game-Image/slope2.jpg');"><button class="play-button"></button></div></a>
+        
+        
+        <!-- Add more empty game divs here -->
+    </div>
+</body>
+</html>
