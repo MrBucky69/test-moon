@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Development</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Blurry box */
+    .blurry-box {
+      width: 300px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black background */
+      box-shadow: 0 0 20px 10px #0A73D2;
+      /* Blurry glow with color #0A73D2 */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      /* Initially hidden */
+      animation: fadeIn 1s forwards;
+      /* Fade-in animation */
+    }
+
+    /* Text styling */
+    .blurry-box p {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #0A73D2;
+      /* Text color same as glow color */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blurry-box">
+    <p>Under Development</p>
+  </div>
+</body>
+
+</html>
