@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Planet Wiki | A Wiki About Planets</title>
+    <meta name="description" content="A Wiki About Planets" />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Product+Sans"
+      rel="stylesheet"
+    />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="flex-center logo-wrapper header-center dropIn">
+      <img class="logo" src="moon.png" alt="Moon Logo" />
+      <h1>MoonHub</h1>
+    </div>
+    <form autocomplete="off" id="uv-form" class="flex-center blurOut">
+      <input
+        autocomplete="false"
+        id="uv-search-engine"
+        value="https://www.bing.com/search?q=%s"
+        type="hidden"
+      />
+      <input
+        autocomplete="false"
+        id="uv-address"
+        type="text"
+        placeholder="Search The Solar System"
+      />
+    </form>
+    <p></p>
+    <div class="center-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+    <div class="bottomText" style="left: 10px">MoonHub v0.1.0</div>
+    <div class="bottomText" style="right: 10px">
+      <a
+        href="https://www.youtube.com/channel/UCkKgbHhoHtOLnWiF7qzQJXA?sub_confirmation=1"
+        rel="noopener"
+        target="_blank"
+        >Youtube</a
+      >
+    </div>
+  </body>
+</html>
